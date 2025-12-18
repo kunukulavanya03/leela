@@ -60,40 +60,24 @@ export const logout = () => {
 };
 
 // API Endpoints
-export const api_users = async (data) => {
-  const response = await api.post('/api/users', data);
-  return response.data;
-};
-export const api_users_{user_id} = async (params = {}) => {
-  const response = await api.get('/api/users/{user_id}', { params });
-  return response.data;
-};
-export const api_users_{user_id} = async (id, data) => {
-  const response = await api.put(`/api/users/{user_id}/${id}`, data);
-  return response.data;
-};
-export const api_content = async (data) => {
-  const response = await api.post('/api/content', data);
-  return response.data;
-};
-export const api_content = async (params = {}) => {
-  const response = await api.get('/api/content', { params });
-  return response.data;
-};
-export const api_content_{content_id} = async (params = {}) => {
-  const response = await api.get('/api/content/{content_id}', { params });
-  return response.data;
-};
-export const api_content_{content_id} = async (id, data) => {
-  const response = await api.put(`/api/content/{content_id}/${id}`, data);
-  return response.data;
-};
-export const api_content_{content_id} = async (id) => {
-  const response = await api.delete(`/api/content/{content_id}/${id}`);
+export const api_register = async (data) => {
+  const response = await api.post('/api/register', data);
   return response.data;
 };
 export const api_login = async (data) => {
   const response = await api.post('/api/login', data);
+  return response.data;
+};
+export const api_reset-password = async (data) => {
+  const response = await api.post('/api/reset-password', data);
+  return response.data;
+};
+export const api_profile = async (params = {}) => {
+  const response = await api.get('/api/profile', { params });
+  return response.data;
+};
+export const api_profile = async (id, data) => {
+  const response = await api.put(`/api/profile/${id}`, data);
   return response.data;
 };
 
