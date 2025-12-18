@@ -43,22 +43,18 @@ cd backend
 
 ## Features
 
-- User authentication and authorization
-- Content creation and management
-- User profile management
-- Search and filtering of content
+- user registration
+- user authentication
+- password reset
+- user profile management
 
 ## API Endpoints
 
-- `POST /api/users` - Create a new user account
-- `GET /api/users/{user_id}` - Retrieve a user's profile information
-- `PUT /api/users/{user_id}` - Update a user's profile information
-- `POST /api/content` - Create a new piece of content
-- `GET /api/content` - Retrieve a list of content
-- `GET /api/content/{content_id}` - Retrieve a specific piece of content
-- `PUT /api/content/{content_id}` - Update a piece of content
-- `DELETE /api/content/{content_id}` - Delete a piece of content
-- `POST /api/login` - Log in to the application
+- `POST /api/register` - Create a new user account
+- `POST /api/login` - Authenticate a user
+- `POST /api/reset-password` - Reset a user's password
+- `GET /api/profile` - Get a user's profile information
+- `PUT /api/profile` - Update a user's profile information
 
 ## License
 
